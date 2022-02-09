@@ -1206,6 +1206,7 @@ h6 {
 @media (min-width: 320px) and (max-width: 767px) {
   .heading__title {
     font-size: 21px;
+    line-height: 21px;
     margin-bottom: 10px;
   }
   .heading__subtitle,
@@ -1217,6 +1218,7 @@ h6 {
   }
   .heading-layout2 .heading__title {
     font-size: 24px;
+    line-height: 24px;
   }
   .heading-layout3 .heading__title {
     font-size: 26px;
@@ -1226,6 +1228,9 @@ h6 {
     line-height: 24px;
     margin-bottom: 10px;
   }
+  .about-layout2 .text-with-icon .text__icon {
+    margin-top: 0rem !important;
+}
 }
 
 /*-------------------------
@@ -1402,6 +1407,7 @@ h6 {
   .page-title-layout3 {
     padding-bottom: 170px;
   }
+  
 }
 
 /*--------------------
@@ -1444,6 +1450,7 @@ h6 {
   margin: 0px 20px;
     margin-left: 8px;
     letter-spacing: -1px;
+    line-height: 14px;
 }
 
 .btn .icon-filled {
@@ -3891,6 +3898,19 @@ input#contact-time {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
+
+  .navbar-brand img {
+    max-width: 64%;
+  }
+  .features-list .feature-item {
+      margin-right: 12px !important;
+  }
+  .service-item .service__icon {
+    height: 150px;
+  }
+  .footer nav {
+    justify-content: flex-start !important;
+}
 }
 
 /* Medium and large Screens */
@@ -4007,6 +4027,20 @@ input#contact-time {
   .header-layout3 .navbar .navbar-brand {
     margin-right: 50px;
   }
+}
+
+@media (max-width: 767px) {
+
+  .slider .slide-item {
+    background-image: none !important;
+    background: #e0e0e1;
+  }
+
+  .slider .slide__title {
+    font-size: 38px;
+    line-height: 35px;
+}
+
 }
 
 /* Mobile Phones and tablets */
@@ -4158,6 +4192,20 @@ input#contact-time {
   .accordion-item .accordion__body p {
     font-size: 13px;
   }
+}
+
+@media (max-width: 490px) {
+
+  .slider .slide-item {
+    background-image: none !important;
+    background: #e0e0e1;
+  }
+
+  .slider .slide__title {
+    font-size: 38px;
+    line-height: 35px;
+}
+
 }
 
 /*-----------------------
@@ -4730,7 +4778,7 @@ input#contact-time {
 /* Extra Small Devices */
 @media (min-width: 320px) and (max-width: 575px) {
   .slider .slide__title {
-    font-size: 27px;
+    font-size: 27px !important;
     margin-bottom: 10px;
   }
   .slider .btn {
@@ -5129,6 +5177,10 @@ input#contact-time {
   margin-right: 30px;
   text-align: center;
   background-color: transparent;
+  
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .features-list .feature-item:last-of-type {
@@ -5213,6 +5265,10 @@ input#contact-time {
   .features-layout2 .feature-item .feature__img {
     display: none;
   }
+  .service__icon img {
+    padding: 15px;
+    width: 100px;
+}
 }
 
 /* Mobile Phones and tablets  */
@@ -5408,7 +5464,7 @@ input#contact-time {
 }
 
 .member .member__info {
-  padding: 19px 10px;
+  padding: 19px 19px;
 }
 
 .member .member__info .member__name {
@@ -5417,9 +5473,9 @@ input#contact-time {
 }
 
 .member .member__info .member__name a {
-    color: #547336;
-    font-size: 34px;
-    line-height: 32px;
+  color: #547336;
+  font-size: 26px;
+  line-height: 29px;
 }
 
 .member .member__info .member__name a:hover {
@@ -7978,7 +8034,14 @@ textarea.form-control {
   }
 }
 
-@media (min-width: 1200px) {
+
+@media (max-width: 1270px) {
+  .header-topbar .contact__list li {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
   .services-carousel .carousel-container {
     margin-right: -170px;
   }
@@ -7999,7 +8062,20 @@ textarea.form-control {
     text-overflow: ellipsis;
     white-space: normal;
   }
+  .slider .slide__title {
+      font-size: 50px;
+  }
+  .features-list .feature-item .feature__icon {
+    width: 70px;
+    height: 70px;
 }
+.features-list .feature-item {
+}
+  .slick-slide img {
+      padding: 15px;
+  }
+}
+
 
 /* Mobile Phones & tablets and Small Screens */
 @media (max-width: 992px) {
